@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f3a168ee4d38248740062b0e33c1f52f",
+    "packages": [
+        {
+            "name": "elevenstack/expressphp",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Guilherme-j10/ExpressPHP.git",
+                "reference": "a1ad3ecda752995f51d6cef03aaead8ffc971e31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Guilherme-j10/ExpressPHP/zipball/a1ad3ecda752995f51d6cef03aaead8ffc971e31",
+                "reference": "a1ad3ecda752995f51d6cef03aaead8ffc971e31",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "elevenstack\\expressphp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme-j10",
+                    "email": "guilhermeZA.123123@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Pacote para roteamento",
+            "keywords": [
+                "ElevenStack",
+                "Expressphp",
+                "Roteamento",
+                "express",
+                "router"
+            ],
+            "time": "2020-06-16T22:55:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
