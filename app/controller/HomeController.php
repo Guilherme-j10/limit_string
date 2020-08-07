@@ -31,20 +31,37 @@
 
         public function select_data(Array $req, Array $res): void
         {   
-            $dados = $this->model_msg->return_data();
-            foreach($dados as $key){
+            foreach($this->model_msg->return_data() as $key){
                 $data = $key["data"];
                 $explode = explode(' ', $data);
                 $horas = $explode[1];
 
                 echo "
                     <li>
-                        <span>Você disse: </span>
+                        <div class='line'>
+                            <span>Você disse: </span>
+                            <button class='delete_item' data-id=".$key['id'].">DELETAR</button>
+                        </div>
                         <p>".$key['msg']."</p>
                         <small>Data de envio: ".$horas."</small>
                     </li>
                 ";
             }
+        }
+
+        public function delete_data(Array $req, Array $res): bool
+        {
+            $id_item = $_POST['id_item'];
+
+            
+
+            if($this->model_msg->delete_item($id_item)){
+                return true;
+            }else{
+                return false;
+            }
+
+            echo 'asd';
         }
 
     }

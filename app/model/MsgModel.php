@@ -36,4 +36,16 @@
                 return false;
             }
         }
+
+        public function delete_item(String $id): bool
+        {
+            $stmt = $this->pdo->prepare("DELETE FROM msg WHERE id = :id");
+            $stmt->execute([':id' => $id]);
+
+            if($stmt->rowCount() > 0){
+                return true;
+            }else{
+                return false;
+            }
+        } 
     }

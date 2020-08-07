@@ -87,8 +87,24 @@ ul li{
     border-bottom: solid 1px #ccc;
 }
 
-ul li span{
+ul li .line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li .line span{
     color: #333;
+}
+
+ul li .line button{
+    background-color: #bb4141;
+    color: #fff;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: .9em;
 }
 
 ul li p{
@@ -103,4 +119,74 @@ ul li small{
     font-size: .7em;
     color: #777;
     font-style: italic;
+}
+
+/* modal */
+.modal{
+    width: 100%;
+    min-height: 100vh;
+    left: 0px;
+    top: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #1d1c1c9b;
+}
+
+.modal .modal_box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.modal .modal_box .header_modal{
+    padding: 20px;
+    border-bottom: solid 1px #ccc;
+}
+
+.modal .modal_box .header_modal h1{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.modal .modal_box .body_modal{
+    padding: 20px;
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal .modal_box .body_modal span i{
+    margin-bottom: 20px;
+    font-size: 4em;
+    color: #e9b406f8;
+}
+
+.modal .modal_box .body_modal p {
+    color: #666;
+    margin-top: 10px;
+}
+
+.modal .modal_box .link_options{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.modal .modal_box .link_options button:first-child{
+    background-color: #0873d8;
+}
+
+.modal .modal_box .link_options button{
+    padding: 6px 12px;
+    background-color: #bb4141;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
 }
