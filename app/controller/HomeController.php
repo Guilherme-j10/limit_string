@@ -53,15 +53,11 @@
         {
             $id_item = $_POST['id_item'];
 
-            
-
             if($this->model_msg->delete_item($id_item)){
                 return true;
             }else{
                 return false;
             }
-
-            echo 'asd';
         }
 
     }
